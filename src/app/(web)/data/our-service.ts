@@ -1,0 +1,45 @@
+export const menu_ourservice = [
+	{
+		id: 1,
+		name: "Business",
+		image: "/images/icons/business-icon.svg",
+		link: "/",
+		comment: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+		bg_image: "/images/sky-line.png",
+	},
+	{
+		id: 2,
+		name: "Startup",
+		image: "/images/icons/setup-icon.svg",
+		link: "/",
+		comment: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+	},
+	{
+		id: 3,
+		name: "Economy",
+		image: "/images/icons/economy-icon.svg",
+		link: "/",
+		comment: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+	},
+	{
+		id: 4,
+		name: "Business",
+		image: "/images/icons/business-icon.svg",
+		link: "/",
+		comment: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+	},
+	{
+		id: 5,
+		name: "Startup",
+		image: "/images/icons/setup-icon.svg",
+		link: "/",
+		comment: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+	},
+	{
+		id: 6,
+		name: "Economy",
+		image: "/images/icons/economy-icon.svg",
+		link: "/",
+		comment: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+	},
+];

@@ -2,26 +2,126 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+	font-family: "Raleway", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	text-decoration: none;
+	list-style: none;
+	outline: none;
+	/* border: none; */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+p {
+	letter-spacing: 0.025em;
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	--color-primery: rgba(17, 17, 17, 1);
+	--color-secondary: 111 114 185;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.wrapper {
+	width: 90%;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.blacked {
+	background: linear-gradient(
+		to left,
+		rgba(17, 17, 17, 1),
+		rgba(37, 37, 36, 1)
+	);
+}
+.text-golden {
+	color: #fff;
+}
+.text-golden:hover {
+	background: linear-gradient(
+		to left,
+		rgba(172, 131, 109, 1),
+		rgba(240, 202, 178, 1)
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+hr.line {
+	border: none;
+	height: 0;
+	background: transparent;
+}
+
+.bg-golden {
+	background: linear-gradient(
+		to left,
+		rgba(172, 131, 109, 1),
+		rgba(240, 202, 178, 1)
+	);
+}
+.golden {
+	background: linear-gradient(
+		to left,
+		rgba(172, 131, 109, 1),
+		rgba(240, 202, 178, 1)
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@font-face {
+	font-family: "Raleway", sans-serif;
+	src: url("../../public/fonts/railway/Raleway-BlackItalic.ttf") format("ttf");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+.gradient-border-wrapper {
+	border: rgba(172, 131, 109, 1) 1px solid;
+}
+
+.border-gradient-top {
+	border-top: 2px solid transparent;
+	-webkit-border-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 1),
+			rgba(172, 131, 109, 1),
+			rgba(0, 0, 0, 1)
+		)
+		1;
+	border-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 1),
+			rgba(172, 131, 109, 1),
+			rgba(0, 0, 0, 1)
+		)
+		1;
+}
+
+.border-gradient-bottom {
+	border-bottom: 2px solid transparent;
+	-webkit-border-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 1),
+			rgba(172, 131, 109, 1),
+			rgba(0, 0, 0, 1)
+		)
+		1;
+	border-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 1),
+			rgba(172, 131, 109, 1),
+			rgba(0, 0, 0, 1)
+		)
+		1;
 }
